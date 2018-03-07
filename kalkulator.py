@@ -45,13 +45,15 @@ def mnozenie():
         a = int(input("Pierwsza liczba "))
         b = int(input("Druga liczba "))
         c = int(input("Trzecia liczba "))
-        if (a,b,c) != 0:
-            wynik = (a)*(b)*(c)
-            print (wynik)
-        else:
-            wynik = (a)*(b)
-            print (wynik)
+    if c == 0:
+        wynik = a * b
+        print (wynik)
+    else:
+        wynik = a * b * c
+        print (wynik)
 
+    except ValueError:
+        print ("Nie podałeś poprawnie liczby ")
     except ValueError:
         print ("Nie podałeś poprawnie liczby ")
     return
